@@ -1,4 +1,4 @@
-package in.roadrunners.urlshortener
+package urlshortener
 
 import scala.concurrent.duration._
 import io.gatling.core.Predef._
