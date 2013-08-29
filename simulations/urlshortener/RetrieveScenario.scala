@@ -8,7 +8,7 @@ import bootstrap._
 object RetrieveScenario {
   val scn = scenario("Retrieve Short URL")
     .feed(csv("shorturls.csv").circular)
-    .during(5 minutes) {
+    .during(Options.retrieveDuration) {
       exec(
         http("retrieve_short_url")
           .get("/${url}")
