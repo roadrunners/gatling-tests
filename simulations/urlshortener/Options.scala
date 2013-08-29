@@ -9,7 +9,7 @@ object Options {
 
   val createDuration = sys.env("GATLING_CREATE_DURATION").toInt minutes
   val createWait = sys.env("GATLING_CREATE_WAIT").toInt seconds
-  val createUsers = sys.env.contains("GATLING_CREATE_USERS").toInt users
+  val createUsers = sys.env("GATLING_CREATE_USERS").toInt users
   val createRampTime = sys.env("GATLING_CREATE_RAMPTIME").toInt seconds
   val createPauseMin = 100 milliseconds
   val createPauseMax = 300 milliseconds
