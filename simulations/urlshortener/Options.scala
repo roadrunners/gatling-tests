@@ -10,14 +10,10 @@ object Options {
   val createDuration = 5 minutes
   val createWait = 0 seconds
   val createUsers = 200 users
-  val createRampTime = 10 seconds
-  val createPauseMin = 100 milliseconds
-  val createPauseMax = 300 milliseconds
+  val createRampTime = 20 seconds
 
   val retrieveDuration = 4 minutes
-  val retrieveWait = 50 seconds
+  val retrieveWait = 30 seconds
   val retrieveUsers = 300 users
-  val retrieveRampTime = 10 seconds
-  val retrievePauseMin = 100 milliseconds
-  val retrievePauseMax = 300 milliseconds
+  val retrieveRampTime = 30 seconds
 }

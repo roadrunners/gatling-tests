@@ -14,6 +14,5 @@ object CreateScenario {
           .post("/")
           .param("url", "${url}")
           .check(status.is(201)))
-      .pause(Options.createPauseMin, Options.createPauseMax)
     }
 }

@@ -13,6 +13,5 @@ object RetrieveScenario {
         http("retrieve_short_url")
           .get("/${url}")
           .check(status.is(200)))
-      .pause(Options.retrievePauseMin, Options.retrievePauseMax)
     }
 }
