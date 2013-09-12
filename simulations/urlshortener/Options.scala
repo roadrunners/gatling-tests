@@ -9,11 +9,11 @@ object Options {
 
   val createDuration = 5 minutes
   val createWait = 0 seconds
-  val createUsers = 200 users
+  val createUsers = 300 users
   val createRampTime = 20 seconds
 
   val retrieveDuration = 4 minutes
   val retrieveWait = 30 seconds
-  val retrieveUsers = 300 users
+  val retrieveUsers = 600 users
   val retrieveRampTime = 30 seconds
 }
