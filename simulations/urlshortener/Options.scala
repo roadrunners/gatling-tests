@@ -7,13 +7,13 @@ import io.gatling.http.Predef._
 object Options {
   val endpoint = sys.env("GATLING_ENDPOINT")
 
-  val createDuration = 5 minutes
+  val createDuration = 2 minutes
   val createWait = 0 seconds
-  val createUsers = 300 users
-  val createRampTime = 20 seconds
+  val createUsers = 600 users
+  val createRampTime = 60 seconds
 
-  val retrieveDuration = 4 minutes
-  val retrieveWait = 30 seconds
+  val retrieveDuration = 2 minutes
+  val retrieveWait = 3 minutes
   val retrieveUsers = 600 users
-  val retrieveRampTime = 30 seconds
+  val retrieveRampTime = 60 seconds
 }
