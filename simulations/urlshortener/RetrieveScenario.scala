@@ -6,7 +6,7 @@ import scala.concurrent.duration._
 import bootstrap._
 
 object RetrieveScenario {
-  val scn(duration: Duration) =
+  def scn(duration: Duration) =
     scenario("Retrieve Short URL")
       .feed(csv("shorturls.csv").circular)
       .during(duration) {
