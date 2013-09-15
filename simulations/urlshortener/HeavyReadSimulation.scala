@@ -9,6 +9,6 @@ import scala.concurrent.duration._
 class HeavyReadSimulation extends Simulation {
   val httpProtocol = http.baseURL(Options.endpoint).disableFollowRedirect
 
-  setUp(RetrieveScenario.scn(duration = 4 minutes).inject(nothingFor(0 seconds), ramp(1500 users) over (150 seconds)))
+  setUp(RetrieveScenario.scn(duration = 400 seconds).inject(nothingFor(0 seconds), ramp(2000 users) over (200 seconds)))
     .protocols(httpProtocol)
 }
