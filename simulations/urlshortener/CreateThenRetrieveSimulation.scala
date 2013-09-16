@@ -9,7 +9,7 @@ import scala.concurrent.duration._
 class CreateThenRetrieveSimulation extends Simulation {
   val httpProtocol = http.baseURL(Options.endpoint).disableFollowRedirect
 
-  setUp(CreateScenario.scn(duration = 2 minutes).inject(nothingFor(0 seconds), ramp(600 users) over (60 seconds)),
-    RetrieveScenario.scn(duration = 2 minutes).inject(nothingFor(120 seconds), ramp(600 users) over (60 seconds)))
+  setUp(CreateScenario.scn(duration = 1 minutes).inject(nothingFor(0 seconds), ramp(600 users) over (20 seconds)),
+    RetrieveScenario.scn(duration = 1 minutes).inject(nothingFor(80 seconds), ramp(600 users) over (5 seconds)))
     .protocols(httpProtocol)
 }
